@@ -1,8 +1,21 @@
-vm-azure/
-├── .gitignore
-├── main.tf
-├── variables.tf
-├── outputs.tf
-├── providers.tf
-├── terraform.tfvars
-└── modules/
+# Diretórios locais do Terraform
+**/.terraform/*
+
+# Terraform State
+*.tfstate
+*.tfstate.*
+
+# Variáveis sensíveis
+*.tfvars
+*.tfvars.json
+
+# Planos do Terraform
+*.tfplan
+tfplan
+
+# Variáveis de ambiente
+.env
+
+# Crash logs
+crash.log
+crash.*.log
