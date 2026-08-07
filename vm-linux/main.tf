@@ -75,7 +75,7 @@ resource "azurerm_virtual_machine" "vm-lab-01" {
   location              = azurerm_resource_group.rg-terraform.location
   resource_group_name   = azurerm_resource_group.rg-terraform.name
   network_interface_ids = [azurerm_network_interface.nic-lab-01.id]
-  vm_size               = "Standard_DS1_v2"
+  vm_size               = "Standard_B2ms"
 
   storage_image_reference {
     publisher = "Canonical"
